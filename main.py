@@ -11,6 +11,7 @@
 # vrai ou faut boolean (true/false)
 #str--> int int 
 """
+"""
 nom = input("quel est vontre nom? " )
 
 age = 0
@@ -25,7 +26,7 @@ while age ==0:
 
 print("vous avez appelez" + nom + ",vous avez " + str(age) + " ans")
 print("l'an prochain vous aurez " + str(age + 1 ) + " ans")
-
+"""
 
 
 #n = 0 # cree la variable 
@@ -45,11 +46,12 @@ while n < 10:
 print("fin de la boucle")
  """
 
-"""  mot_de_passe= ""
-while  not mot_de_passe == "toto":
-    mot_de_passe = input("Quel est votre mot de passe? ")
-print("mot de passe correct ")
-"""
+#mot_de_passe= ""
+mot_de_passe= input("quel est le mot de passe? ")
+while  not mot_de_passe == "majabu":
+    mot_de_passe = input("Quel est le mot de passe ? ")
+print("Mot de passe corect bienvenue " + mot_de_passe + " !" )
+
 
 
 
