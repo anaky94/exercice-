@@ -10,41 +10,46 @@
 #1,5 --> float
 # vrai ou faut boolean (true/false)
 #str--> int int 
-
-nom = "toto"
-age =  30
-
+"""
 nom = input("quel est vontre nom? " )
-age = input("quel est votre age? " )
 
-try:
-    age_prochain = int(age) + 1 
-except ValueError:
-    print("Ereeur: vous devez rentrer un nombre pour L'age ")
-else:
-    print("vous avez appelez" + nom + ",vous avez" + str(age) + "ans")
-    print("l'an prochain vous aurez " + str(age_prochain) + "ans")
+age = 0
+while age ==0:
+    age_str = input ("quel est votre age ")
+    try:
+        age = int(age_str) + 1 
+    except:
+        print("Ereeur: vous devez rentrer un nombre pour L'age ")
 
-""" 
-""" 
-n = 0 # cree la variable 
-print(n)
+#print("fin de la boucle")    
 
-n = 10 # reaffecter la variable 
-print(n)
-n = n + 1 # incrémenter
-print(n)
-""" 
-print("debut de la boucle")
+print("vous avez appelez" + nom + ",vous avez " + str(age) + " ans")
+print("l'an prochain vous aurez " + str(age + 1 ) + " ans")
+
+
+
+#n = 0 # cree la variable 
+#print(n)
+
+#n = 10 # reaffecter la variable 
+#print(n)
+#n = n + 1 # incrémenter
+#print(n)
+
+
+"""print("debut de la boucle")
 n=0
 while n < 10:
     print("valeur de n :" + str(n))
     n = n + 1
 print("fin de la boucle")
+ """
 
-
-
-
+"""  mot_de_passe= ""
+while  not mot_de_passe == "toto":
+    mot_de_passe = input("Quel est votre mot de passe? ")
+print("mot de passe correct ")
+"""
 
 
 
