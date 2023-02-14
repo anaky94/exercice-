@@ -11,19 +11,41 @@
 # vrai ou faut boolean (true/false)
 #str-->chaine / int --> 
 """
+def demander_nom():
+    reponse_nom= ""
+    while reponse_nom=="":
+        reponse_nom=input("quel est votre nomm ?")
+    return reponse_nom
 
-nom = input("quel est vontre nom? " )
 
-age = 0
-while age ==0:
-    try:
-        age =int(input("quel est votre age "))
+def demander_age(nom_personne):
+    age_int = 0
+    while age_int == 0:
+        age_str =input(nom_personne+ " quel est votre age ? ")
+        try:
+            age_int = int(age_str)
         
-    except ValueError:
-        print("Ereur: vous devez rentrer un nombre pour L'age ")
-#print("fin de la boucle")    
-print("vous avez appelez" + nom + ",vous avez " + str(age) + " ans")
-print("l'an prochain vous aurez " + str(age + 1 ) + " ans")
+        except ValueError:
+            print("Ereur: vous devez rentrer un nombre pour L'age ")
+    return age_int 
+
+#=====================================================================
+
+#demander le nom
+nom1 = demander_nom()
+nom2 = demander_nom()
+
+
+#demander l'age
+age1 = demander_age(nom1)
+age2 = demander_age(nom2)
+
+#afficher les resultats
+print("vous avez appelez" + nom1 + ",vous avez " + str(age1) + " ans")
+print("l'an prochain vous aurez " + str(age1 + 1 ) + " ans")
+
+print("vous avez appelez" + nom2 + ",vous avez " + str(age2) + " ans")
+print("l'an prochain vous aurez " + str(age2 + 1 ) + " ans")
 
 
 
