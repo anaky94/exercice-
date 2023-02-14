@@ -29,7 +29,7 @@ def demander_age(nom_personne):
             print("Ereur: vous devez rentrer un nombre pour L'age ")
     return age_int 
 
-#=====================================================================
+#=====================================================================>
 
 #demander le nom
 nom1 = demander_nom()
