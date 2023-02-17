@@ -11,6 +11,14 @@
 # vrai ou faut boolean (true/false)
 #str-->chaine / int --> 
 """
+# afficher_information_personne
+# parametre: nom, age 
+def afficher_informations_personne(nom, age):
+    print("vous vous appeleez " + nom + ", vous avez"+str(age) + " ans ")
+    print("l'an prochain vous aurez " + str(age+1)+"ans")
+
+
+
 def demander_nom():
     reponse_nom= ""
     while reponse_nom=="":
@@ -41,12 +49,8 @@ age1 = demander_age(nom1)
 age2 = demander_age(nom2)
 
 #afficher les resultats
-print("vous avez appelez" + nom1 + ",vous avez " + str(age1) + " ans")
-print("l'an prochain vous aurez " + str(age1 + 1 ) + " ans")
-
-print("vous avez appelez" + nom2 + ",vous avez " + str(age2) + " ans")
-print("l'an prochain vous aurez " + str(age2 + 1 ) + " ans")
-
+afficher_informations_personne(nom1, age1)
+afficher_informations_personne(nom2, age2)
 
 
 #n = 0 # cree la variable 
