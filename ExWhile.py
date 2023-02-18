@@ -1,16 +1,19 @@
 #ex 1
 # Ecrire un programme qui affiche les 20 premeiers 
 #termes de la table de multiplication par 7
-nom = ""
-while nom == "":
-    try:
-        nom = input("quel est votre Nom ?")
-    except:
-        print("vous devez rentrez votre Nom ")
-print("bienvenue " + nom)
+"""
+age = input("quel age as tu ? ")
+age = int(age)
+
+if age > 0 and age <= 100:  
+    print(" L'age est validé")
+else:
+    print("l'age est incorect")
+ """
+lamdda prixHt:prixHt + (priHt * 20/100)
+coucou()
 
 
-# Exercice demander nom
 # Utiliser une variable reponse_nom
 #retun reponse_nom
 
