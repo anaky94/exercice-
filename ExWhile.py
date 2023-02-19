@@ -10,9 +10,8 @@ if age > 0 and age <= 100:
 else:
     print("l'age est incorect")
  """
-lamdda prixHt:prixHt + (priHt * 20/100)
-coucou()
-
+import module 
+player.au_revoir()
 
 # Utiliser une variable reponse_nom
 #retun reponse_nom
