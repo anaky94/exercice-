@@ -6,8 +6,20 @@
 
 module pour le joueur
 """
+   
+
+"""
+pour effectuer un test sur l'ensemble du module 
+if __name__=="__main__":
+    print("bonjour, tout le monde")
+    au_revoir()
+"""
 def parler(personnage, message):
-    print ("{ } : {}". format (personnage, message))
+    print ("{} : {}".format (personnage, message))
 
 def au_revoir():
     print("au_revoir :) !")
+
+if __name__=="__main__":
+    print("bonjour, tout le monde")
+    au_revoir()

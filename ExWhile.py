@@ -9,10 +9,44 @@ if age > 0 and age <= 100:
     print(" L'age est validé")
 else:
     print("l'age est incorect")
- """
-import module 
-player.au_revoir()
+"""
 
-# Utiliser une variable reponse_nom
-#retun reponse_nom
+"""
+Gérer les exceptionns:  
+Element à retenir dans tout les cas de figure : 
+     try/except    
+     (else/finally)
+      Types dexception    : ValueError
+                          NameError
+                          TypeError 
+                          ZeroDivisionError 
+                          OsError
+                          AssertionError
+
+    
+"""
+"""
+ageUtulisateur = input("Quel age as-tu?")
+
+try: 
+    ageUtulisateur = int(ageUtulisateur)
+    
+except:
+    print("l'age indiqué est incorect !")
+else:
+    print("tu as", ageUtulisateur, "ans")
+finally: 
+    print("Fin du progarmme")
+"""
+
+
+
+
+
+
+
+
+
+
+
 

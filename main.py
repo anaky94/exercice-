@@ -17,6 +17,19 @@ def afficher_informations_personne(nom, age):
     print("vous vous appeleez " + nom + ", vous avez"+str(age) + " ans ")
     print("l'an prochain vous aurez " + str(age+1)+"ans")
 
+# == égal 
+# < inférieur 
+# <= inérieur ou égal
+# > supérieur 
+# >=supérieur ou égal
+
+#age == 17
+#
+if age == 18:
+    print("vous etes majeur")
+else:
+    print("vous êtes mineur")
+
 
 
 def demander_nom():
@@ -61,14 +74,7 @@ afficher_informations_personne(nom2, age2)
 #n = n + 1 # incrémenter
 #print(n)
 
-
-"""print("debut de la boucle")
-n=0
-while n < 10:
-    print("valeur de n :" + str(n))
-    n = n + 1
-print("fin de la boucle")
- """
+ 
 
 
 
