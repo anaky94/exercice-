@@ -11,12 +11,6 @@
 # vrai ou faut boolean (true/false)
 #str-->chaine / int --> 
 """
-# afficher_information_personne
-# parametre: nom, age 
-def afficher_informations_personne(nom, age, taille=0):
-    print()
-    print("vous vous appeleez " + nom + ", vous avez "+str(age) + " ans ")
-    print("l'an prochain vous aurez " + str(age+1)+" ans")
 # == égal 
 # < inférieur 
 # <= inérieur ou égal
@@ -28,6 +22,14 @@ def afficher_informations_personne(nom, age, taille=0):
 #age < 10 : vous êtes enfant
 # ado si age >= 12 et age < 18 
 # bebe si age == 1 ou age 2 
+# afficher_information_personne
+# parametre: nom, age 
+
+def afficher_informations_personne(nom, age, taille=0):
+    print()
+    print("vous vous appeleez " + nom + ", vous avez "+str(age) + " ans ")
+    print("l'an prochain vous aurez " + str(age+1)+" ans")
+
     
     if age == 17:
         print("vous êtes presque majeur")

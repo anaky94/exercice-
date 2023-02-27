@@ -16,7 +16,7 @@ Gérer les exceptionns:
 Element à retenir dans tout les cas de figure : 
      try/except    
      (else/finally)
-      Types dexception    : ValueError
+      Types dexception   :ValueError
                           NameError
                           TypeError 
                           ZeroDivisionError 
@@ -27,10 +27,8 @@ Element à retenir dans tout les cas de figure :
 """
 """
 ageUtulisateur = input("Quel age as-tu?")
-
 try: 
-    ageUtulisateur = int(ageUtulisateur)
-    
+    ageUtulisateur = int(ageUtulisateur)    
 except:
     print("l'age indiqué est incorect !")
 else:
@@ -39,10 +37,8 @@ finally:
     print("Fin du progarmme")
 """
 
-
-
-
-
+nom = "cedric"
+print(nom[1], [2], [3])
 
 
 

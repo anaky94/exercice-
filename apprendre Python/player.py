@@ -8,13 +8,6 @@ module pour le joueur
 """
    
 
-"""
-pour effectuer un test sur l'ensemble du module 
-if __name__=="__main__":
-    print("bonjour, tout le monde")
-    au_revoir()
-"""
-
 reponse ="rouge"
 reponse = input("quel est votre reponse ? ")
 print("votre reponse est bien " + reponse, "?")
