@@ -1,5 +1,5 @@
 def demander_nombre(nb_min, nb_max):
-    nombre_str = int(f"quel est le nombre magi enntre {nb_min} et {nb_max} ? ")
+    nombre_str = input(f"quel est le nombre magi enntre {nb_min} et {nb_max} ? ")
     nombre_int=int(nombre_str)
     return nombre_int
     
