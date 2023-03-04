@@ -17,10 +17,10 @@ def demander_nombre(nb_min, nb_max):
 
 NOMBRE_MIN = 1
 NOMBRE_MAX=10
-NOMBRE_MAGIQUE= random.randit(NOMBRE_MIN, NOMBRE_MAX)
+NOMBRE_MAGIQUE= random.randint(NOMBRE_MIN, NOMBRE_MAX)
 nombre=0
 NB_VIES=4
-vie
+
 
 while not nombre == NOMBRE_MAGIQUE:
     nombre = demander_nombre (NOMBRE_MIN,NOMBRE_MAX)
