@@ -11,18 +11,23 @@ def poser_question():
     reponse_str=input(f"calculer:  {a}+{b} = ")
     reponse_int=reponse_str
     if reponse_int == a+b:
-        print("Reponse correct")
-    else:
-        print("Reponse incorecte ")
+        return True
+        #print("Reponse correct")
+    
+        #print("Reponse incorecte ")
+    return False
 
-
-# question N°1 sur 4
+nb_point=0
 for i in range (0, NB_QUESTIONS):
     print(f"question N°{i+1} sur {NB_QUESTIONS}: ")
-    poser_question()
+    if poser_question():
+        print("Reponse Correcte")
+        nb_point +=1
+    else:
+        print("Réponse incorrecte")
     print()
-
-
+   
+print("votre note est {nb_point}/{NB_QUESTIONS}")
 
 
 
