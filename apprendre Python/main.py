@@ -1,4 +1,4 @@
-
+ 
 """" premier programme Formation Pyhon 
 
 #nom = input("quel est ton nom? " )
@@ -47,8 +47,8 @@ def afficher_informations_personne(nom, age, taille=0):
         print("vous etes majeurs")
     else:
         print("vous êtes mineur")
-    #afficher la taill
-    print("votres taille : "+ str(taille) + "m")
+    if not taille ==0:
+        print("votres taille : "+ str(taille) + "m")
 
 
 def demander_nom():
@@ -69,7 +69,6 @@ def demander_age(nom_personne):
             print("Ereur: vous devez rentrer un nombre pour L'age ")
     return age_int 
 
-#=====================================================================>
 
 #demander le nom
 #nom1 = demander_nom()
@@ -95,7 +94,7 @@ def demander_age(nom_personne):
 #n = n + 1 # incrémenter
 #print(n)
 
- #la boucle for 
+ 
 NB_PERSONNES = 1
 for i in range(0,NB_PERSONNES):
     nom = "personne " + str(i+1)

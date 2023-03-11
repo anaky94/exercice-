@@ -1,9 +1,13 @@
+alphabet = []
+lettre=input("entter yu letter ")
+start = ord(lettre)
+for i in range (26):
+    alphabet.append(chr(start+i))
 
-"""alphabet= ["n","o","p","q","r","s","t","u","v","w","x","y","z"]
-a=input("choisis un lettre")
+print(alphabet)
 
-print(a)"""
-jour = ["lundi","mardi","mercredi","Jeud","Vendredi","SAmedi","dimanche]
+
+
 
 
 
