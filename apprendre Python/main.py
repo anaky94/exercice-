@@ -94,7 +94,7 @@ def demander_age(nom_personne):
 #n = n + 1 # incrémenter
 #print(n)
 
- 
+  
 NB_PERSONNES = 1
 for i in range(0,NB_PERSONNES):
     nom = "personne " + str(i+1)
