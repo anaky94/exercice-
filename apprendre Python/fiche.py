@@ -2,21 +2,24 @@
 #On demande le nom et l'age de la personne
 # Premier programme
 
-nom = input("quel est votre nom ? ")
-age = input("quel est votre age ? ")
+#nom = input("quel est votre nom ? ")
+#age = input("quel est votre age ? ")
+"""
 
-
-age_prochain=0
-while age_prochain==0:
-    print("Quel est votre age? ")
+age=0
+while age==0:
+    age_str=input("Quel est votre age? ")
+    
     try:
-        age_prochain = int(age) + 1
+        age = int(age_str) 
+        
     except ValueError :
         print("Erreur: Vous devez rentrer un nombre pour l'age")
-  
-print("fin de la boucle")
+        
+
 #print("vous vous apeler " + nom + " et vos avez "+str(age)+" ans")
-#print("vous aurez "+str(age_prochain)+" ans l'année prochaine")
+print("vous aurez "+str(age+ 1)+" ans l'année prochaine")
+"""
 
 
 
