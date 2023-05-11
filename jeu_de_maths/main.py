@@ -9,7 +9,7 @@ def poser_question():
     a= random.randint(NOMBRE_MIN, NOMBRE_MAX)
     b= random.randint(NOMBRE_MIN, NOMBRE_MAX)
     reponse_str=input(f"calculer:  {a}+{b} = ")
-    reponse_int=reponse_str
+    reponse_int=int(reponse_str)
     if reponse_int == a+b:
         return True
         #print("Reponse correct")
@@ -27,7 +27,7 @@ for i in range (0, NB_QUESTIONS):
         print("Réponse incorrecte")
     print()
    
-print("votre note est {nb_point}/{NB_QUESTIONS}")
+print(f"votre note est {nb_point}/{NB_QUESTIONS}")
 
 
 
