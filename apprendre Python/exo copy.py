@@ -17,14 +17,16 @@ for i in range(0, 21):
 
 #exemple: 
 #un ecran de 17 pouces de diagonal, corespond à 43,18cm (=17*2,54)
-pouce_verscm=float(2.54)
-cm_verspouce=float(0.394)
+pouce=float(2.54)
+cm=float(0.394)
 
-demande=input("vous souhaitez convertir de pouce vers cm ou de cm vers pouce? ")
 
-vari=int(input("rentre votre opérateur en pouces"))
-print(vari, "pouce ")
-print("=",vari*pouce_verscm,"cm" )
+
+demande=input(f"vous souhaitez convertir de pouce vers cm ou de cm vers pouce? ")
+if demande==pouce:
+ vari=int(input("rentre votre opérateur en pouces"))
+ print(vari, "pouce ")
+ print("=",vari*pouce,"cm" )
 
 vari=int(input("rentré votre opérateur en cm"))
 
