@@ -1,52 +1,51 @@
-import random
 
-def demander_nombre(nb_min, nb_max):
-    nombre_int= 0 
-    while nombre_int == 0:
-        nombre_str = input(f"quel est le nombre magigique entre {nb_min} et {nb_max} ? ")
-        try:   
-            nombre_int=int(nombre_str)
-        except:
-            print("Erreur: vous devez rentrer un nombre. Réesayer ")
-        else:
-            if nombre_int < nb_min or nombre_int > nb_max:
-                print(f"Erreur: Le nombre doit être entre {nb_min} et {nb_min}. Reésayer")
-                nombre_int=0
-    return nombre_int
+#Exercice 
 
+""" Ecrire un programme qui affiche les 20 premiers termes de de la table de multiplication par 7, en signalant aupassage (à l'aide d'une astérisque) ceux qui sont des multiples de 3 exmple:"""
+"""
+a=20
+m=7
+for i in range(0, 21):
+    print(i*7)
+    if i%3:
+        print("*", end=' ')
 
-NOMBRE_MIN = 1
-NOMBRE_MAX=10
-NOMBRE_MAGIQUE= random.randint(NOMBRE_MIN, NOMBRE_MAX)
-nombre=0
-NB_VIES=4
-vies=NB_VIES
+# avec la boucle while 
+"""
+#1 pouce = 2,54
+#1 cm = 0.394 pouces 
+
+#exemple: 
+#un ecran de 17 pouces de diagonal, corespond à 43,18cm (=17*2,54)
+pouce=float(2.54)
+cm=float(0.394)
 
 
-while not nombre == NOMBRE_MAGIQUE and vies >0 :
-    print( f"Il vous reste {vies} vies ")
-    nombre = demander_nombre (NOMBRE_MIN,NOMBRE_MAX)
-    if nombre == NOMBRE_MAGIQUE:
-        print("bravo vous avez gagner !")
-        print (f"Il vous restait {vies} vies " )
-    elif nombre > NOMBRE_MAGIQUE:
-        print("le nombre est plus petit")
-        vies -=1
-    else:
-        print("le nombre est plus grand ")
-        vies -=1
-if vies==0:
-    print(f"Vous avez perdu ! le nombre magique etais : {NOMBRE_MAGIQUE} ")
+
+demande=input(f"vous souhaitez convertir de pouce vers cm ou de cm vers pouce? ")
+if demande==pouce:
+ vari=int(input("rentre votre opérateur en pouces"))
+ print(vari, "pouce ")
+ print("=",vari*pouce,"cm" )
+
+vari=int(input("rentré votre opérateur en cm"))
 
 
 
 
 
+"""
+def demande_utilisateur(pouce_verscm,cm_verspouce):
+   demande=input(f"vous souhaitez convertir de {pouce_verscm}? ou {cm_verspouce} ?")
+
+   if demande == pouce_verscm:
+      demande1=float(input("rentré la valeur à convertir en cm"))
+      print(demande*cm_verspouce, "cm")
+"""    
+    
 
 
-
-
-
+#demande_utilisateur()
 
 
 
