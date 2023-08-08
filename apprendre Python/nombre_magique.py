@@ -17,6 +17,7 @@ def demander_nombre(nb_min, nb_max):
     return nombre_int
 
 NOMBRE_MAX=10
+NOMBRE_MIN= 1
 NOMBRE_MAGIQUE=random.randint(NOMBRE_MIN, NOMBRE_MAX)
 NB_VIES=4
 nombre =0
