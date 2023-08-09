@@ -1,15 +1,28 @@
 
-
+import random
    
 a=NOMBRE_MIN=1
 b=NOMBRE_MAX= 10 
 NB_QUESTION =4
-moyenne=2,5
+moyenne=int(2)
 
 def poser_question():
-   reponse_str= input(f"calculer  : {a} + {b} =")
+   a=random.randint(NOMBRE_MIN, NOMBRE_MAX)
+   b=random.randint(NOMBRE_MIN, NOMBRE_MAX)
+   o=random.randint(0,1)
+
+   
+   operateur_str="+"
+   if o ==1:
+      operateur_str="*"
+
+   reponse_str= input(f"calculer  : {a} {operateur_str} {b} =")
    reponse_int=int(reponse_str)
-   if reponse_int == a+b:
+   calcul=a+b
+   if o==1:
+      calcul=a*b
+   
+   if reponse_int == calcul:
       return True
       #print("réponse correcte")
    return False
@@ -31,12 +44,11 @@ if NB_points == NB_QUESTION:
    print("Ecxellent")
 elif NB_points ==0:
    print("Réviser vos Maths")
-elif NB_points> moyenne:
+elif NB_points > moyenne:
+   print("pas mal")
+else:
+   print("peut miux faire")
 
-# votre note est de 2/4 -> Excellent!
-# 0 --> réviser vos maths!
-# moyenne --> int(NB_QUESTION) 2.5 --> é 
-# < moyenne --> peut mieux faire 
 
 print("fin de la partie")
 
