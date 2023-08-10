@@ -6,6 +6,14 @@
     <title> ANAKY Konan</title>
 </head>
 <style>
+
+    :root{
+        --color1:#D89584;
+        --color2:#F4F4F4; 
+
+        
+    }
+
     body{
         margin:0;
     }
@@ -26,48 +34,89 @@
     h1{
         color: white;
         text-align: center;
-        
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 0px;
         
     }
     div.cover p {
         color: lightgray;
         text-align: center;
         position: relative;
+        margin-top: 8px;
+        font-size:14px ;
+
     }
     div.cover-contact{
-        background-color: brown;
+       /* background-color: brown;*/
         position: absolute;
-        top:10px ;
+        top:20px ;
         left: 10px;
-        border-left: 4px solid #D89584;
-        padding-left: 8px;
+        border-left: 4px solid var(--color1);
+        padding-left: 7px;
     }
     div.cover-contact p{
         text-align:  left;
+        margin: 5px;
+    }
+    div.cover-contact p :first-child:
+    {
+        margin-bottom: 14px;
+        
+
     }
     div.cover-contact a{
         color: white;
         font-size:14px ;
 
     }
+    a.contact-butter{
+        color:var(--color1);
+        border: 3px solid var(-color1);
+        padding: 8px 20px;
+        text-decoration: none;
+        background-color: #00000040;
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 14px;
+        
+
+    }
+    a.contact-butter:hover {
+        color: white;
+        border: 3px solid white;
+    }
+    
+    div.section-grise1
+    {
+        background-color: var(--color2);
+        height: 100px;
+
+    }
 </style>
 
 
 
-
-
-
 <body>
+    <!-- Couverture-->
     <div class="cover">
         <img class="cover-profile" src="RESOURCES/profile.jpg" alt="image">
         <h1> Konan ANAKY</h1>
-        <p></p>
-        <p></p>
         <p>Developpeur Freelance | Junior </p>
-        <div class="cover-contact"> <p><a href="mailto:anakykonan@gmail.com?subject=Contact%20depuis%20Konan%20ANAKY.com">anakykonan@gmail.com</a>  </p>
-        <p> <a href="tel:+3363232332">06 23 23 23 32</a> </p> 
-        </div>
+        <p></p>
+        
+        <div style="text-align: center;">
+        <a class="contact-butter" href="mailto:anakykonan@gmail.com?subject=Contact%20depuis%20Konan%20ANAKY.com">CONTACTER MOI </a></div> 
 
+        <div class="cover-contact"> <p><a href="mailto:anakykonan@gmail.com?subject=Contact%20depuis%20Konan%20ANAKY.com">anakykonan@gmail.com</a> </p>
+        <p> <a href="tel:+3363232332">06 23 23 23 32</a> </p> 
+        
+        </div>
+        
     </div>
+    <!-- Section Grise 1 -->
+    <div class="section-grise1">
+    </div>
+    <img  style="width: 100%" src="RESOURCES/triangle1.svg" alt="triangle1">
 </body>
 </html>
