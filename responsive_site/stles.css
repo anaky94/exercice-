@@ -11,7 +11,7 @@ body{
 header{
     height: 100vh;
     width:100vw ;
-    background-image: url(/responsive_site/image/bakcground.jpg);
+    background-image: url(responsive_site/image/bakcground.jpg);
 
 }
 .navbar{
