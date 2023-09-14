@@ -49,7 +49,6 @@ elif NB_points > moyenne:
 else:
    print("peut miux faire")
 
-
 print("fin de la partie")
 
 
