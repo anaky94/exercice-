@@ -1,5 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,200;1,400;1,600&display=swap');
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 :root{
         --color1:#D89584;
         --color2:#F4F4F4; 
@@ -68,7 +72,7 @@ div.cover-contact a{
     }
 a.contact-butter{
         color:var(--color1);
-        border: 3px solid var(-color1);
+        border: 3px solid var(--color1-color1);
         padding: 8px 20px;
         text-decoration: none;
         background-color: #00000040;
@@ -140,9 +144,8 @@ div.section-grise1 p{
 
 .cole60{
     width: 60%;
-
 }
 
-img .float-right{
-    display: flex;
+div.float-right{
+    background-color: red;git
 }
