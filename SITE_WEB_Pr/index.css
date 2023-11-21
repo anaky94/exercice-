@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,200;1,400;1,600&display=swap');
 
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -88,11 +91,13 @@ a.contact-butter:hover {
     }
 
     
-.section{
+div.section{
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 30px;
         padding-bottom: 30px;
+        overflow: auto;
+        
 
     }
     
@@ -138,14 +143,41 @@ div.section-grise1 p{
         
     }
 
-.cole40{
+.col40{
     width: 40%;
 }
 
+<<<<<<< HEAD
 div.cole60{
+=======
+.col60{
+>>>>>>> 8cd176dea9652709b3878b657cbc7146b3e821d2
     width: 60%;
 }
+.ensavoirplus{
+    display: flex;
+}
 
+<<<<<<< HEAD
 .section1 .cole40 .float-right{
    
+=======
+
+div.text-avec-ligne-verticale{
+    
+    border-left: 3px solid var(--color1);
+    padding-left: 10px;
+    height: 50px;
+    display: inline-block;
+
+}
+div.text-avec-ligne-verticale{
+    margin-top: 0;
+
+}
+.barre-vertcale{
+    height: 50px;
+    width:4px ;
+    background-color: var(--color1);
+>>>>>>> 8cd176dea9652709b3878b657cbc7146b3e821d2
 }
